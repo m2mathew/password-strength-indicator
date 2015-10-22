@@ -3,11 +3,28 @@
 <head>
 	<title>Password Strength Indicator</title>
 
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="styles/main.sass.css">
 </head>
 <body>
 
+	<header>
+		<div class="site-title"><h1>U Can Haz Strng Password?</h1></div>
+	</header>
 
+	<main>
+		<label for="password">Enter your password</label>
+		<input type="text" id="password" placeholder="make it good">
+		<div class="output error"></div>
+	</main>
+
+	<div class="stripes bottom">
+		<div class="stripe d"></div>
+		<div class="stripe r"></div>
+		<div class="stripe u"></div>
+		<div class="stripe m"></div>
+		<div class="stripe s"></div>
+	</div>
 
 	<footer class="footer">
         <p>A creation by <a href="http://www.drumsensei.com">Mike Mathew</a> for <a href="http://www.theironyard.com"> The Iron Yard</a></p>
