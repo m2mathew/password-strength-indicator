@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+
+
+footer {
+	background-color: #D5E5F2;
+        margin: 0;
+
+	p {
+		padding-left: 2em;
+
+		a {
+			color: #0F2859;
+
+			&:hover {
+				color: #5EA4BF;
+			}
+		}
+	}
+}

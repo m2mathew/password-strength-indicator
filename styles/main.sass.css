@@ -1,0 +1,9 @@
+footer {
+  background-color: #D5E5F2;
+  margin: 0; }
+  footer p {
+    padding-left: 2em; }
+    footer p a {
+      color: #0F2859; }
+      footer p a:hover {
+        color: #5EA4BF; }
