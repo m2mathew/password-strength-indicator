@@ -1,4 +1,4 @@
-# Password Strength Indicator*​
+# Password Strength Indicator*
 
 Create a program that determines the complexity of a given password based on these rules:
 * A very weak password contains only numbers ​*and*​ is fewer than eight characters.
@@ -15,11 +15,11 @@ The password 'abc123xyz' is a strong password.
 The password '1337h@xor!' is a very strong password.
 ```
 
-​### Constraints
+### Constraints
 
 * Create a ​_passwordValidator_​ function that takes in the password as its argument and returns a value you can evaluate to determine the password strength. Do not have the function return a string-you may need to support multiple languages in the future.
 * Use a single output statement.
 
-​### Challenge
+### Challenge
 
 * Create a GUI application or web application that displays graphical feedback as well as text feedback in real time. As someone enters a password, determine its strength and display the result.
