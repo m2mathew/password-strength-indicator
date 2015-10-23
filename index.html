@@ -13,9 +13,17 @@
 	</header>
 
 	<main>
-		<label for="password">Enter your password</label>
-		<input type="text" id="password" placeholder="make it good">
-		<div class="output error"></div>
+		<form action="/" id="input-password">
+			<fieldset>
+				<label for="password">Enter your password</label>
+				<input type="text" id="password" placeholder="make it good">
+			</fieldset>
+			<fieldset>
+				<input type="submit" value="Submit">
+			</fieldset>
+		</form>
+		<div class="output"></div>
+		<div id="error"></div>
 	</main>
 
 	<div class="stripes bottom">
@@ -29,6 +37,7 @@
 	<footer class="footer">
         <p>A creation by <a href="http://www.drumsensei.com">Mike Mathew</a> for <a href="http://www.theironyard.com"> The Iron Yard</a></p>
     </footer>
+
 
 	<script type="text/javascript" src="scripts/bundle.js"></script>
 </body>

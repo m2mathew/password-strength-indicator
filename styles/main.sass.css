@@ -14,14 +14,67 @@ header {
 main {
   flex: 1;
   padding: 2em; }
-  main label {
-    padding: 0.5em; }
-  main input {
-    border: 1px solid #979797;
-    width: 50%;
+  main #input-password {
+    background-color: #ccc;
+    padding: 1em; }
+    main #input-password fieldset {
+      border: none; }
+    main #input-password label {
+      padding: 0.5em;
+      font-weight: bold;
+      font-size: 1.75em;
+      display: block;
+      color: #666;
+      color: rgba(0, 0, 0, 0.6);
+      text-shadow: 0 1px 1px #fff; }
+    main #input-password input {
+      margin-top: 2.5em;
+      border: 1px solid #979797;
+      font-size: 1em;
+      padding: 0.5em;
+      background: #fff;
+      width: 40%; }
+      main #input-password input[type="text"] {
+        width: 215px;
+        padding: 5px 8px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #666;
+        border: none;
+        background-color: #fff;
+        border-radius: 4px; }
+        main #input-password input[type="text"]:focus {
+          -webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.5);
+          -webkit-animation: pulse 1.5s infinite ease-in-out; }
+      main #input-password input[type="submit"] {
+        padding: 8px 15px;
+        font-weight: bold;
+        line-height: 1;
+        color: #444;
+        border: none;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
+        background-color: #fff;
+        border-radius: 23px;
+        -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+        main #input-password input[type="submit"]:hover, main #input-password input[type="submit"]:focus {
+          -webkit-animation: pulse 1.5s infinite ease-in-out; }
+    main #input-password fieldset:last-child {
+      width: 25%; }
+  main button {
     font-size: 1em;
-    padding: 0.5em;
-    background: #fff; }
+    padding: 0.5em 1em;
+    background-color: #44C7F4;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 1em; }
+  main #error {
+    color: red;
+    font-size: 1.25em; }
+  main .output {
+    color: #111;
+    font-size: 1.25em; }
 
 .stripes.bottom {
   padding-top: 0;
@@ -63,3 +116,11 @@ footer {
       color: #0F2859; }
       footer p a:hover {
         color: #5EA4BF; }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.1); }
+  50% {
+    -webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.99); }
+  100% {
+    -webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.1); } }
