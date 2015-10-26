@@ -13,6 +13,7 @@ $(document).ready(function () {
 	var charCount = 0;
 	var strength = 0;
 
+	// checking password strength every time a key is pressed and let go
 	$('input').on('keyup', function() {
 
 		var test = $password.val();
@@ -20,8 +21,6 @@ $(document).ready(function () {
 		$strength.text('');
 
 		for(var i = 0; i < test.length; i++) {
-
-
 			if(test.charCodeAt(i) >= 48 && test.charCodeAt(i) <= 57) {
 				numCount++;
 			}
@@ -57,6 +56,7 @@ $(document).ready(function () {
 
 	});
 
+	// Give final verdict on password strength
 	$('form').on('submit', function(e) {
 		e.preventDefault();
 
@@ -77,6 +77,5 @@ $(document).ready(function () {
 		if(strength === 3) {
 			$strength.html("<p id='very-strong'>The password '" + $password.val() + "' is a very strong password.")
 		}
-
 	});
 });
