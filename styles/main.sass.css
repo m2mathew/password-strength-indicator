@@ -46,35 +46,40 @@ main {
         main #input-password input[type="text"]:focus {
           -webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.5);
           -webkit-animation: pulse 1.5s infinite ease-in-out; }
-      main #input-password input[type="submit"] {
-        padding: 8px 15px;
-        font-weight: bold;
-        line-height: 1;
-        color: #444;
-        border: none;
-        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
-        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
-        background-color: #fff;
-        border-radius: 23px;
-        -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
-        main #input-password input[type="submit"]:hover, main #input-password input[type="submit"]:focus {
-          -webkit-animation: pulse 1.5s infinite ease-in-out; }
     main #input-password fieldset:last-child {
       width: 25%; }
-  main button {
-    font-size: 1em;
-    padding: 0.5em 1em;
-    background-color: #44C7F4;
-    border: none;
-    font-weight: bold;
-    color: #fff;
-    margin-left: 1em; }
-  main #error {
-    color: red;
-    font-size: 1.25em; }
-  main .output {
+    main #input-password button {
+      margin-top: 2.5em;
+      border: 1px solid #979797;
+      font-size: 1em;
+      padding: 0.5em;
+      background: #fff;
+      width: 40%;
+      padding: 8px 15px;
+      font-weight: bold;
+      line-height: 1;
+      color: #444;
+      border: none;
+      text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+      background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
+      background-color: #fff;
+      border-radius: 23px;
+      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+      main #input-password button:hover, main #input-password button:focus {
+        -webkit-animation: pulse 1.5s infinite ease-in-out; }
+  main #output {
     color: #111;
     font-size: 1.25em; }
+  main #strength {
+    font-size: 1.25em; }
+    main #strength #very-weak {
+      color: red; }
+    main #strength #weak {
+      color: purple; }
+    main #strength #strong {
+      color: blue; }
+    main #strength #very-strong {
+      color: green; }
 
 .stripes.bottom {
   padding-top: 0;

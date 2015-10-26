@@ -9218,18 +9218,19 @@ var $ = require('jquery');
 $(document).ready(function () {
 
 	var $password = $('#password');
-	var $err = $('#error');
+	var $strength = $('#strength');
 	var $output = $('#output');
 
 	var numCount = 0;
 	var letterCount = 0;
 	var charCount = 0;
+	var strength = 0;
 
 	$('input').on('keyup', function () {
 
 		var test = $password.val();
 		$output.text('');
-		$err.text('');
+		$strength.text('');
 
 		for (var i = 0; i < test.length; i++) {
 
@@ -9248,18 +9249,44 @@ $(document).ready(function () {
 
 		if (numCount === test.length && test.length > 0) {
 			$output.text('very weak password');
+			strength = 0;
 		}
 
 		if (letterCount === test.length && test.length > 0) {
 			$output.text('weak password');
+			strength = 1;
 		}
 
 		if (test.length >= 8 && numCount > 0 && letterCount > 0) {
 			$output.text('strong password');
+			strength = 2;
 		}
 
 		if (test.length >= 8 && numCount > 0 && letterCount > 0 && charCount > 0) {
 			$output.text('very strong password');
+			strength = 3;
+		}
+	});
+
+	$('form').on('submit', function (e) {
+		e.preventDefault();
+
+		$output.text('');
+
+		if (strength === 0) {
+			$strength.html("<p id='very-weak'>The password '" + $password.val() + "' is a very weak password.");
+		}
+
+		if (strength === 1) {
+			$strength.html("<p id='weak'>The password '" + $password.val() + "' is a weak password.");
+		}
+
+		if (strength === 2) {
+			$strength.html("<p id='strong'>The password '" + $password.val() + "' is a strong password.");
+		}
+
+		if (strength === 3) {
+			$strength.html("<p id='very-strong'>The password '" + $password.val() + "' is a very strong password.");
 		}
 	});
 });
