@@ -1,4 +1,8 @@
-# Password Strength Indicator*
+# Password Strength Indicator
+
+Assignment from The Iron Yard-Austin
+
+Week 9 - day 36
 
 Create a program that determines the complexity of a given password based on these rules:
 * A very weak password contains only numbers ​*and*​ is fewer than eight characters.
