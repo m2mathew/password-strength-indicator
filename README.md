@@ -10,6 +10,8 @@ Create a program that determines the complexity of a given password based on the
 * A strong password contains letters ​*and*​ at least one number ​*and*​ is at least eight characters.
 * A very strong password contains letters, numbers, and special characters ​*and*​ is at least eight characters.
 
+![password-app-screenshot](https://www.dropbox.com/s/4kp3t2qwzplsvyo/Screenshot%202018-01-23%2022.31.15.png?dl=0)
+
 ### ​Example Output​
 
 ```
